@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataFlocks — Turn Disparate Data Into Unified Flocks</title>
+    <meta name="description"
+        content="DataFlocks helps businesses collect, organize, and activate their data so teams can make faster, smarter decisions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        /* Ensure WOW animated elements are initially hidden */
+        .wow {
+            visibility: hidden;
+        }
+
+        .wow.animate__animated {
+            visibility: visible !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ░░ SCROLL PROGRESS ░░ -->
+    <div id="scroll-progress"></div>
+
+    <!-- ░░ BACK TO TOP ░░ -->
+    <button id="back-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     NAVIGATION
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <div class="logo-mark">D</div>
+                <span>DataFlocks</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#industries">Industries</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#how-we-work">Process</a>
+                <a href="#contact" class="nav-cta">Contact Us</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     HERO
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-blob blob-1"></div>
+        <div class="hero-blob blob-2"></div>
+        <div class="hero-blob blob-3"></div>
+        <div class="hero-grid-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <div class="hero-title-static">
+                    Turn Disparate Data Into
+                    <span class="grad-text">Unified Flocks</span>
+                </div>
+
+            </h1>
+            <p class="hero-sub wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                DataFlocks helps businesses collect, organize, and activate their data so teams can make faster, smarter
+                decisions.
+            </p>
+            <div class="hero-btns wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                <a href="#contact" class="btn-primary">
+                    Get Started
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn-outline">Schedule a Free Consultation</a>
+            </div>
+            <div class="hero-scroll-hint wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     ABOUT — 2-col split: content left, infographic right
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="about" class="section-light">
+        <div class="container">
+            <div class="about-split">
+
+                <!-- LEFT: text content -->
+                <div class="about-content wow animate__fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                    <div class="eyebrow eyebrow-purple">
+                        <span class="eyebrow-dot"></span>Who We Are
+                    </div>
+                    <h2 class="about-title">About <span class="grad-text">DataFlocks</span></h2>
+                    <p class="about-body">DataFlocks is a boutique data services company focused on helping
+                        organizations turn scattered information into a strategic asset. We combine modern data
+                        engineering, cloud platforms, and analytics to create reliable, scalable data foundations for
+                        your business.</p>
+                    <a href="#contact" class="btn-primary">
+                        Work With Us
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- RIGHT: data-flow infographic -->
+                <div class="about-infographic wow animate__fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.25s"
+                    data-wow-offset="80">
+
+                    <div class="aif-flow">
+
+                        <!-- Node 1: Scattered Data -->
+                        <div class="aif-node aif-node-1">
+                            <div class="aif-icon aif-icon-purple">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="5" cy="12" r="2" />
+                                    <circle cx="12" cy="5" r="2" />
+                                    <circle cx="19" cy="12" r="2" />
+                                    <circle cx="12" cy="19" r="2" />
+                                    <line x1="7" y1="12" x2="10" y2="12" />
+                                    <line x1="12" y1="7" x2="12" y2="10" />
+                                    <line x1="14" y1="12" x2="17" y2="12" />
+                                    <line x1="12" y1="14" x2="12" y2="17" />
+                                </svg>
+                            </div>
+                            <span>Scattered Data</span>
+                        </div>
+
+                        <!-- Arrow + line -->
+                        <div class="aif-arrow">
+                            <div class="aif-line">
+                                <div class="aif-line-fill aif-fill-1"></div>
+                            </div>
+                            <svg class="aif-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </div>
+
+                        <!-- Node 2: Processing -->
+                        <div class="aif-node aif-node-2">
+                            <div class="aif-icon aif-icon-cyan">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                                    <rect x="9" y="9" width="6" height="6" />
+                                    <line x1="9" y1="1" x2="9" y2="4" />
+                                    <line x1="15" y1="1" x2="15" y2="4" />
+                                    <line x1="9" y1="20" x2="9" y2="23" />
+                                    <line x1="15" y1="20" x2="15" y2="23" />
+                                    <line x1="20" y1="9" x2="23" y2="9" />
+                                    <line x1="20" y1="14" x2="23" y2="14" />
+                                    <line x1="1" y1="9" x2="4" y2="9" />
+                                    <line x1="1" y1="14" x2="4" y2="14" />
+                                </svg>
+                            </div>
+                            <span>Processing Layer</span>
+                        </div>
+
+                        <!-- Arrow + line -->
+                        <div class="aif-arrow">
+                            <div class="aif-line">
+                                <div class="aif-line-fill aif-fill-2"></div>
+                            </div>
+                            <svg class="aif-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </div>
+
+                        <!-- Node 3: Cloud Platform -->
+                        <div class="aif-node aif-node-3">
+                            <div class="aif-icon aif-icon-purple">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+                                </svg>
+                            </div>
+                            <span>Cloud Platform</span>
+                        </div>
+
+                        <!-- Arrow + line -->
+                        <div class="aif-arrow">
+                            <div class="aif-line">
+                                <div class="aif-line-fill aif-fill-3"></div>
+                            </div>
+                            <svg class="aif-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </div>
+
+                        <!-- Node 4: Analytics -->
+                        <div class="aif-node aif-node-4">
+                            <div class="aif-icon aif-icon-pink">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="18" y1="20" x2="18" y2="10" />
+                                    <line x1="12" y1="20" x2="12" y2="4" />
+                                    <line x1="6" y1="20" x2="6" y2="14" />
+                                </svg>
+                            </div>
+                            <span>Analytics</span>
+                        </div>
+
+                        <!-- Arrow + line -->
+                        <div class="aif-arrow">
+                            <div class="aif-line">
+                                <div class="aif-line-fill aif-fill-4"></div>
+                            </div>
+                            <svg class="aif-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </div>
+
+                        <!-- Node 5: Business Value -->
+                        <div class="aif-node aif-node-5">
+                            <div class="aif-icon aif-icon-green">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                    <polyline points="16 7 22 7 22 13" />
+                                </svg>
+                            </div>
+                            <span>Business Value</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Decorative background card -->
+                    <div class="aif-bg-card"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     SERVICES — White cards on interactive dark ocean
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="services">
+        <canvas id="services-canvas"></canvas>
+        <div class="mouse-glow" id="services-glow"></div>
+
+        <div class="container" style="position:relative;z-index:2">
+            <div class="sec-header wow animate__fadeInUp" data-wow-duration="0.7s" data-wow-delay="0s">
+                <div class="eyebrow eyebrow-light">
+                    <span class="eyebrow-dot"></span>What We Do
+                </div>
+                <h2 class="sec-title text-white">Our <span class="grad-text">Services</span></h2>
+                <p class="sec-sub text-muted">Comprehensive data solutions tailored to your business maturity and goals.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Card 1 -->
+                <div class="svc-card tilt-card wow animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="svc-badge badge-strategy">Strategy</div>
+                    <div class="svc-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 8l4 4-4 4M8 12h8" />
+                        </svg>
+                    </div>
+                    <h3>Data Strategy &amp; Architecture</h3>
+                    <p>Define a clear data vision and roadmap aligned with your business goals.</p>
+                    <ul>
+                        <li>Strategy workshops &amp; assessments</li>
+                        <li>Target architecture blueprints</li>
+                        <li>Cloud migration planning</li>
+                        <li>Technology selection guidance</li>
+                    </ul>
+                    <div class="svc-card-glow"></div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="svc-card tilt-card wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="svc-badge badge-engineering">Engineering</div>
+                    <div class="svc-icon-wrap icon-cyan">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                            <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                        </svg>
+                    </div>
+                    <h3>Data Engineering &amp; Integration</h3>
+                    <p>Build robust pipelines that bring your data together into clean, usable flocks.</p>
+                    <ul>
+                        <li>Batch &amp; real-time pipelines</li>
+                        <li>Data lake &amp; warehouse setup</li>
+                        <li>ETL/ELT optimization</li>
+                        <li>API &amp; source integrations</li>
+                    </ul>
+                    <div class="svc-card-glow glow-cyan"></div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="svc-card tilt-card wow animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="svc-badge badge-governance">Governance</div>
+                    <div class="svc-icon-wrap icon-pink">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Data Quality &amp; Governance</h3>
+                    <p>Ensure your data is trusted, compliant, and ready for critical decisions.</p>
+                    <ul>
+                        <li>Quality checks &amp; monitoring</li>
+                        <li>Master data management</li>
+                        <li>Catalog &amp; lineage setup</li>
+                        <li>Compliance frameworks</li>
+                    </ul>
+                    <div class="svc-card-glow glow-pink"></div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="svc-card tilt-card wow animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="svc-badge badge-analytics">Analytics</div>
+                    <div class="svc-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 20V10M12 20V4M6 20v-6" />
+                        </svg>
+                    </div>
+                    <h3>Analytics &amp; BI Solutions</h3>
+                    <p>Turn your data into clear insights that business users can act on every day.</p>
+                    <ul>
+                        <li>KPI &amp; dashboard design</li>
+                        <li>Self-service BI enablement</li>
+                        <li>Embedded reporting</li>
+                        <li>Executive scorecards</li>
+                    </ul>
+                    <div class="svc-card-glow"></div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="svc-card tilt-card wow animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="svc-badge badge-ai">AI &amp; ML</div>
+                    <div class="svc-icon-wrap icon-cyan">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <h3>AI &amp; Advanced Analytics</h3>
+                    <p>For organizations ready to go further — predictive models, forecasting, and personalization
+                        concepts.</p>
+                    <div class="ai-tags">
+                        <span>Predictive Models</span>
+                        <span>Use Case Discovery</span>
+                        <span>POCs</span>
+                        <span>ML Pipelines</span>
+                    </div>
+                    <div class="svc-card-glow glow-cyan"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     INDUSTRIES — Swiper carousel (infinite, no gaps)
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     INDUSTRIES — Continuous Scroll Carousel
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="industries" class="section-light">
+        <div class="container">
+            <div class="sec-header wow animate__fadeInUp" data-wow-duration="0.7s" data-wow-offset="80">
+                <div class="eyebrow eyebrow-purple">
+                    <span class="eyebrow-dot"></span>Sectors We Serve
+                </div>
+                <h2 class="sec-title">Industries We <span class="grad-text">Serve</span></h2>
+                <p class="sec-sub">Deep expertise across data-centric sectors — wherever data matters, we deliver.</p>
+            </div>
+        </div>
+
+        <!-- Continuous Scroll Marquee -->
+        <div class="industries-marquee-wrap wow animate__fadeInUp" data-wow-duration="0.7s" data-wow-offset="120">
+            <div class="industries-marquee ">
+
+                <!-- FIRST SET OF CARDS (Original 8) -->
+
+                <!-- Technology & SaaS -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Technology &amp; SaaS</h3>
+                </div>
+
+                <!-- Retail & eCommerce -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Retail &amp; eCommerce</h3>
+                </div>
+
+                <!-- Financial Services -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Financial Services &amp; Fintech</h3>
+                </div>
+
+                <!-- Healthcare -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Healthcare &amp; Life Sciences</h3>
+                </div>
+
+                <!-- Manufacturing -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Manufacturing &amp; Logistics</h3>
+                </div>
+
+                <!-- Energy -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Energy &amp; Utilities</h3>
+                </div>
+
+                <!-- Government -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Government &amp; Public Sector</h3>
+                </div>
+
+                <!-- Education -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Education &amp; Research</h3>
+                </div>
+
+                <!-- SECOND SET (Duplicates for seamless loop) -->
+
+                <!-- Technology & SaaS (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Technology &amp; SaaS</h3>
+                </div>
+
+                <!-- Retail & eCommerce (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Retail &amp; eCommerce</h3>
+                </div>
+
+                <!-- Financial Services (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Financial Services &amp; Fintech</h3>
+                </div>
+
+                <!-- Healthcare (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Healthcare &amp; Life Sciences</h3>
+                </div>
+
+                <!-- Manufacturing (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Manufacturing &amp; Logistics</h3>
+                </div>
+
+                <!-- Energy (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Energy &amp; Utilities</h3>
+                </div>
+
+                <!-- Government (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Government &amp; Public Sector</h3>
+                </div>
+
+                <!-- Education (Duplicate) -->
+                <div class="ind-card">
+                    <h3 class="ind-card-title">Education &amp; Research</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     WHY US
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="why-us">
+        <div class="why-bg-orb orb-1"></div>
+        <div class="why-bg-orb orb-2"></div>
+        <div class="container" style="position:relative;z-index:2">
+            <div class="sec-header wow animate__fadeInUp" data-wow-duration="0.7s">
+                <div class="eyebrow eyebrow-light">
+                    <span class="eyebrow-dot"></span>Our Advantage
+                </div>
+                <h2 class="sec-title text-white">Why <span class="grad-text">DataFlocks</span></h2>
+                <p class="sec-sub text-muted">What makes us different — and why it matters for your data journey.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card wow animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="why-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                        </svg>
+                    </div>
+                    <h3>Business-First Approach</h3>
+                    <p>We start with your business outcomes, not the technology. Every solution is designed to deliver
+                        measurable impact from day one.</p>
+                </div>
+                <div class="why-card wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="why-icon icon-cyan">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <h3>Cloud-Native Practices</h3>
+                    <p>Modern, scalable architectures built for the cloud from the ground up — leveraging the best of
+                        AWS, GCP, and Azure ecosystems.</p>
+                </div>
+                <div class="why-card wow animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="why-icon icon-pink">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                        </svg>
+                    </div>
+                    <h3>Vendor-Agnostic</h3>
+                    <p>We work with the tools that best fit your needs — no vendor lock-in, no hidden agendas. Pure
+                        expertise, honest recommendations.</p>
+                </div>
+                <div class="why-card wow animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="why-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Collaborative Delivery</h3>
+                    <p>Embedded in your team, not just a vendor. We work alongside your people to build capability and
+                        ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     HOW WE WORK — Light Theme Vertical Timeline
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="how-we-work" class="section-light hww-light">
+        <div class="container">
+            <div class="sec-header wow animate__fadeInUp" data-wow-duration="0.7s" data-wow-offset="80">
+                <div class="eyebrow eyebrow-purple">
+                    <span class="eyebrow-dot"></span>Our Process
+                </div>
+                <h2 class="sec-title">How We <span class="grad-text">Work</span></h2>
+                <p class="sec-sub">A clear, collaborative process designed to deliver value at every stage of your data
+                    journey.</p>
+            </div>
+
+            <!-- Vertical timeline -->
+            <div class="timeline wow animate__fadeInUp" id="timeline" data-wow-duration="0.7s" data-wow-offset="120">
+
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="timeline-connector">
+                        <div class="tl-badge tl-badge-1">
+                            <span class="tl-num">01</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="M21 21l-4.35-4.35" />
+                            </svg>
+                        </div>
+                        <div class="tl-line">
+                            <div class="tl-line-fill"></div>
+                        </div>
+                    </div>
+                    <div class="timeline-card tc-1">
+                        <div class="tc-header">
+                            <span class="tc-label">Phase 1</span>
+                            <h3>Discover</h3>
+                        </div>
+                        <p>Understand your objectives, pain points, and current data landscape through deep-dive
+                            workshops and stakeholder interviews. We map your existing systems, data flows, and gaps.
+                        </p>
+                        <div class="tc-tags">
+                            <span>Workshops</span>
+                            <span>Stakeholder Interviews</span>
+                            <span>Data Audit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step timeline-step-reverse">
+                    <div class="timeline-connector">
+                        <div class="tl-badge tl-badge-2">
+                            <span class="tl-num">02</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+                            </svg>
+                        </div>
+                        <div class="tl-line">
+                            <div class="tl-line-fill"></div>
+                        </div>
+                    </div>
+                    <div class="timeline-card tc-2">
+                        <div class="tc-header">
+                            <span class="tc-label">Phase 2</span>
+                            <h3>Design</h3>
+                        </div>
+                        <p>Propose an architecture and implementation plan tailored to your priorities, constraints, and
+                            technology landscape. We co-create the roadmap with your team.</p>
+                        <div class="tc-tags">
+                            <span>Architecture</span>
+                            <span>Roadmap</span>
+                            <span>Tech Selection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="timeline-connector">
+                        <div class="tl-badge tl-badge-3">
+                            <span class="tl-num">03</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <div class="tl-line">
+                            <div class="tl-line-fill"></div>
+                        </div>
+                    </div>
+                    <div class="timeline-card tc-3">
+                        <div class="tc-header">
+                            <span class="tc-label">Phase 3</span>
+                            <h3>Deliver</h3>
+                        </div>
+                        <p>Build, integrate, and validate your data solutions in focused, iterative phases with
+                            continuous feedback loops. Quality-first engineering, always.</p>
+                        <div class="tc-tags">
+                            <span>Agile Sprints</span>
+                            <span>QA &amp; Testing</span>
+                            <span>Deployment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step timeline-step-reverse">
+                    <div class="timeline-connector">
+                        <div class="tl-badge tl-badge-4">
+                            <span class="tl-num">04</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <div class="tl-line tl-line-hidden"></div>
+                    </div>
+                    <div class="timeline-card tc-4">
+                        <div class="tc-header">
+                            <span class="tc-label">Phase 4</span>
+                            <h3>Enable</h3>
+                        </div>
+                        <p>Train your teams, document all processes, and hand over with full confidence. We stay
+                            available for ongoing support and continuous improvement.</p>
+                        <div class="tc-tags">
+                            <span>Training</span>
+                            <span>Documentation</span>
+                            <span>Handover</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     CTA — Box layout with animated background
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="contact">
+        <!-- Animated BG elements -->
+        <div class="cta-blob blob-a"></div>
+        <div class="cta-blob blob-b"></div>
+        <div class="cta-blob blob-c"></div>
+        <canvas id="cta-canvas"></canvas>
+
+        <div class="container" style="position:relative;z-index:2">
+            <div class="cta-box wow animate__zoomIn" data-wow-duration="0.8s">
+                <div class="cta-main">
+                    <div class="eyebrow eyebrow-light">
+                        <span class="eyebrow-dot"></span>Get In Touch
+                    </div>
+                    <h2 class="sec-title text-white">Ready to bring your data <span class="grad-text">together?</span>
+                    </h2>
+                    <p class="sec-sub text-muted">Tell us about your data challenges, and we'll share a practical,
+                        no-obligation proposal within a few business days.</p>
+                    <a href="mailto:contact@dataflocks.com" class="btn-cta" id="cta-btn">
+                        <span class="btn-shine"></span>
+                        Contact Us
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="cta-info">
+                    <div class="cta-info-item">
+                        <div class="cta-info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="cta-info-label">Email Us</div>
+                            <a href="mailto:contact@dataflocks.com" class="cta-info-value">contact@dataflocks.com</a>
+                        </div>
+                    </div>
+                    <div class="cta-info-item">
+                        <div class="cta-info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="cta-info-label">Location</div>
+                            <div class="cta-info-value">Remote-first, serving clients globally</div>
+                        </div>
+                    </div>
+                    <div class="cta-divider"></div>
+                    <p class="cta-promise">No obligation. No pressure. Just a practical conversation about your data.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     FOOTER
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-mark">D</div>
+                        <span>DataFlocks</span>
+                    </a>
+                    <p>Turning scattered information into strategic assets for modern businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#how-we-work">Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DataFlocks. All rights reserved.</p>
+                <p>Remote-first &middot; Serving clients globally</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        // Initialize WOW.js with proper settings
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize WOW
+            new WOW({
+                boxClass: 'wow',
+                animateClass: 'animate__animated',
+                offset: 0,
+                mobile: true,
+                live: true,
+                callback: function (box) {
+                    console.log('WOW animated:', box);
+                },
+                scrollContainer: null
+            }).init();
+
+            console.log('WOW.js initialized');
+        });
+    </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
